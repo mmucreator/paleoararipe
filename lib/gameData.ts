@@ -67,7 +67,7 @@ export const FOSSILS: Record<FossilId, Fossil> = {
     habitat: "Lagos e lagoas permanentes",
     period: "Cretáceo Inferior (~110 Ma)",
     group: "Crustacea › Malacostraca",
-    taxon: "Decapoda",
+    taxon: "Palaemonidae",
   },
   scorpiones: {
     id: "scorpiones",
