@@ -20,8 +20,8 @@ const SCATTER: ScatterItem[] = [
   { id: "blattodea", top: "70%", left: "82%", size: 110, rotate: -14, opacity: 0.09 },
   { id: "isoptera", top: "88%", left: "20%", size: 90, rotate: 10, opacity: 0.08 },
   { id: "hemiptera", top: "50%", left: "48%", size: 140, rotate: -6, opacity: 0.05 },
-  { id: "ephemeroptera_larva", top: "84%", left: "62%", size: 90, rotate: 16, opacity: 0.08 },
-  { id: "odonata_larva", top: "20%", left: "44%", size: 90, rotate: -12, opacity: 0.06 },
+  { id: "ephemeroptera_ninfa", top: "84%", left: "62%", size: 90, rotate: 16, opacity: 0.08 },
+  { id: "odonata_ninfa", top: "20%", left: "44%", size: 90, rotate: -12, opacity: 0.06 },
 ];
 
 export function InsectBackdrop({ tone = "#6b5328" }: { tone?: string }) {

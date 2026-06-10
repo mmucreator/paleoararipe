@@ -31,7 +31,7 @@ export const Silhouettes: Record<string, React.FC<SilhouetteProps>> = {
     </svg>
   ),
 
-  odonata_larva: ({ className, size = 80, color = "currentColor" }) => (
+  odonata_ninfa: ({ className, size = 80, color = "currentColor" }) => (
     <svg viewBox="0 0 100 100" width={size} height={size} className={className} fill={color}>
       {/* Head */}
       <ellipse cx="50" cy="20" rx="10" ry="8" />
@@ -150,7 +150,7 @@ export const Silhouettes: Record<string, React.FC<SilhouetteProps>> = {
     </svg>
   ),
 
-  ephemeroptera_larva: ({ className, size = 80, color = "currentColor" }) => (
+  ephemeroptera_ninfa: ({ className, size = 80, color = "currentColor" }) => (
     <svg viewBox="0 0 80 110" width={size * 0.8} height={size} className={className} fill={color}>
       {/* Head */}
       <ellipse cx="40" cy="18" rx="10" ry="9" />

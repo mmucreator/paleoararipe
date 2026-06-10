@@ -778,7 +778,7 @@ if (accepted.includes(guess)) {
             <p className="text-amber-800 text-lg font-semibold mb-1">Explicação</p>
             <p className="text-stone-700 text-lg leading-relaxed">{q.explanation}</p>
           </div>
-          <button
+          <button       
             onClick={() => { if (isCorrect) update({ score: gs.score + pts, phase: "board", turn: gs.turn + 1, diceValue: null, currentQuestion: null, triviaSelected: null }); else endTurn(); }}
             className={`${btnPrimary} mt-auto`} style={btnPrimaryStyle}
           >

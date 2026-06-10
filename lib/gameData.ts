@@ -1,10 +1,10 @@
 export type FossilId =
   | "odonata_adulto"
-  | "odonata_larva"
+  | "odonata_ninfa"
   | "decapoda"
   | "scorpiones"
   | "orthoptera"
-  | "ephemeroptera_larva"
+  | "ephemeroptera_ninfa"
   | "ephemeroptera_adulto"
   | "blattodea"
   | "hemiptera"
@@ -43,13 +43,13 @@ export const FOSSILS: Record<FossilId, Fossil> = {
     taxon: "Odonata",
     
   },
-  odonata_larva: {
-    id: "odonata_larva",
-    name: "Libélula larva",
-    sciName: "Odonata (larva)",
-    image: "/fossils/odonata-larva.png",
+  odonata_ninfa: {
+    id: "odonata_ninfa",
+    name: "Libélula ninfa",
+    sciName: "Odonata (ninfa)",
+    image: "/fossils/odonata-ninfa.png",
     silhouette: "M50,15 L60,20 L65,35 L60,55 L50,65 L40,55 L35,35 L40,20 Z M35,40 L20,35 M65,40 L80,35 M35,50 L18,48 M65,50 L82,48",
-    description: "As larvas de libélula (ninfas) são predadoras aquáticas que viviam no fundo dos lagos cretáceos. A preservação de estágios larvais é raríssima no registro fóssil, tornando os exemplares do Crato excepcionalmente valiosos.",
+    description: "As ninfas de libélula são predadoras aquáticas que viviam no fundo dos lagos cretáceos. A preservação de estágios ninfais é raríssima no registro fóssil, tornando os exemplares do Crato excepcionalmente valiosos.",
     funFact: "As ninfas de libélula podem viver subaquáticas por até 5 anos antes de se tornarem adultas.",
     habitat: "Fundo de lagos rasos",
     period: "Cretáceo Inferior (~110 Ma)",
@@ -95,14 +95,14 @@ export const FOSSILS: Record<FossilId, Fossil> = {
     group: "Insecta › Neoptera › Polyneoptera",
     taxon: "Orthoptera",
   },
-  ephemeroptera_larva: {
-    id: "ephemeroptera_larva",
-    name: "Efêmera larva",
-    sciName: "Ephemeroptera (larva)",
-    image: "/fossils/ephemeroptera-larva.png",
+  ephemeroptera_ninfa: {
+    id: "ephemeroptera_ninfa",
+    name: "Efêmera ninfa",
+    sciName: "Ephemeroptera (ninfa)",
+    image: "/fossils/ephemeroptera-ninfa.png",
     silhouette: "M50,20 L55,25 L58,40 L55,60 L50,70 L45,60 L42,40 L45,25 Z M42,45 L30,40 L22,42 M58,45 L70,40 L78,42 M42,52 L28,50 M58,52 L72,50 M50,70 L44,85 M50,70 L50,87 M50,70 L56,85",
-    description: "As larvas (ninfas) de efemerópteros são aquáticas e viviam no fundo dos lagos. São reconhecidas pelas brânquias laterais e pelas três caudas longas características. Sua presença indica água limpa e oxigenada.",
-    funFact: "As larvas de efêmeras atuais podem viver até 3 anos na água, mas os adultos vivem apenas algumas horas.",
+    description: "As ninfas de efemerópteros são aquáticas e viviam no fundo dos lagos. São reconhecidas pelas brânquias laterais e pelas três caudas longas características. Sua presença indica água limpa e oxigenada.",
+    funFact: "As ninfas de efêmeras atuais podem viver até 3 anos na água, mas os adultos vivem apenas algumas horas.",
     habitat: "Fundo de lagos bem oxigenados",
     period: "Cretáceo Inferior (~110 Ma)",
     group: "Insecta › Pterygota › Palaeoptera",
@@ -301,7 +301,7 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
   },
   {
     type: "trivia",
-    question: "Os insetos com metamorfose completa (larva → pupa → adulto) são chamados de:",
+    question: "Os insetos com metamorfose completa (ninfa → pupa → adulto) são chamados de:",
     options: ["Hemimetábolos", "Ametábolos", "Holometábolos", "Parametábolos"],
     answer: "Holometábolos",
     explanation: "Holometábola (metamorfose completa) inclui besouros, moscas, borboletas e formigas. Hemimetábola (incompleta) inclui libélulas e baratas.",
@@ -372,7 +372,7 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
   },
   {
     type: "trivia",
-    question: "O que indica a presença de fósseis de insetos aquáticos como larvas de libélula e efêmeras na Formação Crato?",
+    question: "O que indica a presença de fósseis de insetos aquáticos como ninfas de libélula e efêmeras na Formação Crato?",
     options: [
       "O ambiente era um deserto com oásis temporários",
       "Existia um lago permanente com água limpa e oxigenada na superfície",
@@ -380,7 +380,7 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
       "O ambiente era um mar raso com águas salobras",
     ],
     answer: "Existia um lago permanente com água limpa e oxigenada na superfície",
-    explanation: "Larvas de libélula e efêmeras são bioindicadores de água limpa. Sua presença indica que a superfície do lago era bem oxigenada, mesmo que o fundo fosse anóxico.",
+    explanation: "As ninfas de libélula e efêmeras são bioindicadores de água limpa. Sua presença indica que a superfície do lago era bem oxigenada, mesmo que o fundo fosse anóxico.",
     difficulty: "medium",
   },
   {
