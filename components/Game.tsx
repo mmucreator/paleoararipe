@@ -311,15 +311,15 @@ function INaturalistGrid({ taxon }: { taxon: string }) {
     const taxonData = data.results?.[0];
     const taxonId = taxonData?.id;
     if (!taxonId) return;
-    return fetch(`https://api.inaturalist.org/v1/observations?taxon_id=${taxonId}&has[]=photos&per_page=6&order_by=votes&quality_grade=research&photo_licensed=true&rank=species`);
-  })
+ return fetch(`https://api.inaturalist.org/v1/taxa/${taxonId}`)  })
   .then((r) => r?.json())
   .then((data) => {
     if (!data) return;
     const urls = data.results
-      .map((o: any) => o.photos?.[0]?.url?.replace("square", "medium"))
-      .filter(Boolean);
-    setPhotos(urls);
+     const taxon = data.results?.[0];
+const urls = (taxon?.taxon_photos || [])
+  .map((tp: any) => tp.photo?.url?.replace("square", "medium"))
+  .filter(Boolean);
   })
   .catch(() => {});
   }, [taxon]);
