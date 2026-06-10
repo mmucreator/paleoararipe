@@ -478,13 +478,13 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
     type: "trivia",
     question: "Qual característica morfológica distingue Ephemeroptera (efêmeras) de outros insetos alados?",
     options: [
-      "Possuem apenas dois pares de asas membranosas iguais",
+      "Possuem dois pares de asas membranosas em forma triangular",
       "Possuem asas anteriores endurecidas (élitros)",
       "Têm asas cobertas de escamas coloridas",
       "As asas anteriores são parcialmente endurecidas (hemiélitros)",
     ],
-    answer: "Possuem apenas dois pares de asas membranosas triangulares iguais em forma",
-    explanation: "Efemerópteros têm asas iguais triangulares membranosas. Não podem dobrar as asas sobre o corpo — característica primitiva herdada dos Palaeoptera.",
+    answer: "Possuem dois pares de asas membranosas em forma triangular",
+    explanation: "Efemerópteros têm asas em forma triangular. Não podem dobrar as asas sobre o corpo — característica primitiva herdada dos Palaeoptera.",
     difficulty: "hard",
   },
 ];
