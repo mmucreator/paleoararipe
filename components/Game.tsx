@@ -335,8 +335,8 @@ function INaturalistGrid({ taxon, fossilId }: { taxon: string; fossilId?: string
         ))}
       </div>
     </div>
-  );
 }
+
 function FossilSearchInput({ allIds, wrongGuesses, onGuess }: {
   allIds: FossilId[];
   wrongGuesses: FossilId[];
