@@ -301,28 +301,28 @@ function FossilCard({ fossilId, revealed }: { fossilId: FossilId; revealed: bool
   );
 }
 
-function INaturalistGrid({ taxon }: { taxon: string }) {
-  const [photos, setPhotos] = React.useState<string[]>([]);
-
+function INaturalistGrid({ taxon, fossilId }: { taxon: string; fossilId?: string }) {  const [photos, setPhotos] = React.useState<string[]>([]);
   React.useEffect(() => {
     fetch(`https://api.inaturalist.org/v1/taxa?q=${taxon}&per_page=1`)
   .then((r) => r.json())
   .then((data) => {
-    const taxonData = data.results?.[0];
-    const taxonId = taxonData?.id;
-    if (!taxonId) return;
- return fetch(`https://api.inaturalist.org/v1/taxa/${taxonId}`)  })
+  const taxonData = data.results?.[0];
+  const taxonId = taxonData?.id;
+  if (!taxonId) return;
+  const isNymph = fossilId?.includes("ninfa") ?? false;
+  const taxaUrl = `https://api.inaturalist.org/v1/taxa/${taxonId}${isNymph ? "?term_id=1&term_value_id=6" : ""}`;
+  return fetch(taxaUrl)
   .then((r) => r?.json())
   .then((data) => {
     if (!data) return;
-   const taxon = data.results?.[0];
-const urls = (taxon?.taxon_photos || [])
-  .map((tp: any) => tp.photo?.url?.replace("square", "medium"))
-  .filter(Boolean);
-setPhotos(urls); 
+    const taxon = data.results?.[0];
+    const urls = (taxon?.taxon_photos || [])
+      .map((tp: any) => tp.photo?.url?.replace("square", "medium"))
+      .filter(Boolean);
+    setPhotos(urls);
   })
   .catch(() => {});
-  }, [taxon]);
+  }, [taxon, fossilId]);
 
   if (photos.length === 0) return null;
 
@@ -679,7 +679,7 @@ if (accepted.includes(guess)) {
             </div>
           </div>
          {fossil.taxon && (
-  <INaturalistGrid taxon={fossil.taxon} />
+ <INaturalistGrid taxon={fossil.taxon} fossilId={fossil.id} />
 )}
 <button onClick={endTurn} className={`${btnPrimary} mt-auto`} style={btnPrimaryStyle}>Próximo turno →</button>
         </div>
