@@ -2,8 +2,6 @@ import React from "react";
 import { InsectBackdrop } from "@/components/InsectBackdrop";
 import { asset } from "@/lib/assets";
 
-// Fundo unificado: usa a imagem configurada em lib/assets.ts (background)
-// ou, na ausência dela, o papel vintage com silhuetas de insetos.
 export function Backdrop({ insectTone = "#6b5328" }: { insectTone?: string }) {
   const bg = asset("background");
 
