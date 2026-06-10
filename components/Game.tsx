@@ -585,7 +585,7 @@ if (accepted.includes(guess)) {
           <div className="w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 border-2" style={{ backgroundColor: isFossil ? "#c98a4b" : "#7a8a5a", borderColor: INK }}>
             {isFossil ? "🪲" : "📜"}
           </div>
-          <h2 className="font-serif text-3xl text-stone-800 mb-3">{isFossil ? "Identificação por fotos" : "Pergunta Paleontológica"}</h2>
+          <h2 className="font-serif text-3xl text-stone-800 mb-3">{isFossil ? "Identificação por foto" : "Pergunta Paleontológica"}</h2>
           <p className="text-stone-800 mb-8 text-lg leading-relaxed max-w-sm mx-auto">
             {isFossil ? "Uma foto de fóssil será exibida. Identifique o organismo usando pistas morfológicas. Você tem até 3 tentativas." : "Uma pergunta sobre paleontologia, taxonomia ou sobre a Formação Crato será apresentada."}
           </p>
