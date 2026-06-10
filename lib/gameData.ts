@@ -136,7 +136,7 @@ export const FOSSILS: Record<FossilId, Fossil> = {
   },
   hemiptera: {
     id: "hemiptera",
-    name: "Percevejo / Cigarra",
+    name: "Percevejo ",
     sciName: "Hemiptera",
     image: "/fossils/hemiptera.png",
     silhouette: "M50,28 L60,24 L70,28 L73,40 L68,50 L50,56 L32,50 L27,40 L30,28 L40,24 Z M40,26 L28,20 L20,22 M60,26 L72,20 L80,22 M50,25 L50,18 L48,12 M50,25 L52,14 M50,56 L48,68 M50,56 L52,68",
