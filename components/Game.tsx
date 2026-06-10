@@ -292,7 +292,7 @@ function FossilCard({ fossilId, revealed }: { fossilId: FossilId; revealed: bool
   }}
 >
   <span className="uppercase tracking-widest text-sm font-semibold" style={{ color: "#5a3e1b" }}>
-    {(fossilId.includes("_vivo") || fossilId.includes("_vivente")) ? "Identifique o inseto vivente" : "Identifique o fóssil"}
+    {(fossilId.includes("_vivo") || fossilId.includes("_vivente")) ? "Identifique o Artrópode vivente" : "Identifique o fóssil"}
   </span>
 </div>
         )}
