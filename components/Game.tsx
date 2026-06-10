@@ -315,11 +315,11 @@ function INaturalistGrid({ taxon }: { taxon: string }) {
   .then((r) => r?.json())
   .then((data) => {
     if (!data) return;
-    const urls = data.results
-     const taxon = data.results?.[0];
+   const taxon = data.results?.[0];
 const urls = (taxon?.taxon_photos || [])
   .map((tp: any) => tp.photo?.url?.replace("square", "medium"))
   .filter(Boolean);
+setPhotos(urls); 
   })
   .catch(() => {});
   }, [taxon]);
