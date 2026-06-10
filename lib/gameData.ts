@@ -124,7 +124,7 @@ export const FOSSILS: Record<FossilId, Fossil> = {
   blattodea: {
     id: "blattodea",
     name: "Barata",
-    sciName: "Blattodea",
+    sciName: "Blattaria",
     image: "/fossils/blattodea.png",
     silhouette: "M50,25 L62,22 L72,28 L75,42 L70,55 L50,62 L30,55 L25,42 L28,28 L38,22 Z M50,22 L50,15 L48,10 M50,22 L52,12 M38,25 L25,20 L18,24 M62,25 L75,20 L82,24 M38,32 L22,28 M62,32 L78,28",
     description: "Baratas (Blattodea) são comuns na Formação Crato. Esses insetos oportunistas habitavam a serapilheira e decompunham matéria orgânica às margens dos lagos. Sua morfologia cretácea é quase idêntica à das baratas modernas.",
