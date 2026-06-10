@@ -254,11 +254,11 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
     question: "Por que os fósseis da Formação Crato são tão bem preservados?",
     options: [
       "Alta temperatura magmática",
-      "Soterramento rápido em lago com baixa oxigenação",
+      "Lago com baixa oxigenação",
       "Congelamento glacial",
       "Pressão tectônica intensa",
     ],
-    answer: "Soterramento rápido em lago com baixa oxigenação",
+    answer: "Lago com baixa oxigenação",
     explanation: "O fundo anóxico (sem oxigênio) do lago impedia a decomposição, permitindo fossilização de tecidos moles.",
     difficulty: "medium",
   },
@@ -280,10 +280,10 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
   },
   {
     type: "trivia",
-    question: "Qual grupo de vertebrados é famoso nos fósseis da Formação Santana, da mesma bacia?",
+    question: "Qual grupo de vertebrados é famoso nos fósseis da Formação Romualdo, da mesma bacia?",
     options: ["Dinossauros saurópodes", "Peixes actinopterígios e pterossauros", "Mamíferos placentários", "Quelônios marinhos"],
     answer: "Peixes actinopterígios e pterossauros",
-    explanation: "A Formação Santana, acima do Crato na Bacia do Araripe, é mundialmente famosa por peixes ósseos e pterossauros excepcionais.",
+    explanation: "A Formação Romualdo, acima do Crato na Bacia do Araripe, é mundialmente famosa por peixes ósseos e pterossauros excepcionais.",
     difficulty: "medium",
   },
   {
@@ -326,7 +326,7 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
   {
     type: "trivia",
     question: "Como se chama o processo de fossilização onde tecidos moles são preservados?",
-    options: ["Mineralização", "Carbonização", "Fossilização excepcional", "Bioturbação"],
+    options: ["Soterração", "Carbonização", "Fossilização excepcional", "Bioturbação"],
     answer: "Fossilização excepcional",
     explanation: "A fossilização excepcional (ou Konservat-Lagerstätte) preserva tecidos moles como asas, músculos e órgãos internos, algo raríssimo no registro fóssil.",
     difficulty: "medium",
@@ -341,7 +341,7 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
       "Uma planície costeira do Nordeste",
     ],
     answer: "Um planalto sedimentar que preserva os estratos fossilíferos",
-    explanation: "A Chapada do Araripe é um planalto sedimentar com até 900m de altitude que protege os estratos cretáceos da erosão, preservando os fósseis.",
+    explanation: "A Chapada do Araripe é um planalto sedimentar com até 900m de altitude que expõe os fósseis para a erosãoo.",
     difficulty: "easy",
   },
   {
@@ -411,7 +411,7 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
   },
   {
     type: "trivia",
-    question: "O que são 'nódulos de calcário' encontrados na Formação Santana, acima do Crato?",
+    question: "O que são 'nódulos de calcário' encontrados na Formação Romualdo, acima do Crato?",
     options: [
       "Rochas vulcânicas ricas em fósseis de peixes",
       "Concreções calcárias que preservam fósseis em 3D",
@@ -419,7 +419,7 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
       "Estromatólitos formados por algas cianobactérias",
     ],
     answer: "Concreções calcárias que preservam fósseis em 3D",
-    explanation: "Os nódulos (concreções) da Formação Santana são famosos por preservar peixes e pterossauros em três dimensões, diferente dos fósseis achatados do Crato.",
+    explanation: "Os nódulos (concreções) da Formação Romualdo são famosos por preservar peixes e pterossauros em três dimensões, diferente dos fósseis achatados do Crato.",
     difficulty: "hard",
   },
   {
@@ -483,8 +483,8 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
       "Têm asas cobertas de escamas coloridas",
       "As asas anteriores são parcialmente endurecidas (hemiélitros)",
     ],
-    answer: "Possuem apenas dois pares de asas membranosas iguais",
-    explanation: "Efemerópteros têm asas triangulares membranosas, com o par anterior muito maior que o posterior. Não podem dobrar as asas sobre o corpo — característica primitiva herdada dos Palaeoptera.",
+    answer: "Possuem apenas dois pares de asas membranosas triangulares iguais em forma",
+    explanation: "Efemerópteros têm asas iguais triangulares membranosas. Não podem dobrar as asas sobre o corpo — característica primitiva herdada dos Palaeoptera.",
     difficulty: "hard",
   },
 ];
