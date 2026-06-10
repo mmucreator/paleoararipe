@@ -327,21 +327,7 @@ function INaturalistGrid({ taxon, fossilId }: { taxon: string; fossilId?: string
       .catch(() => {});
   }, [taxon, fossilId]);
 
-  if (photos.length === 0) return null;
-
-  return (
-    <div className="rounded-2xl p-4 border-2" style={{ backgroundColor: "#fffdf6", borderColor: "#bda878" }}>
-      <p className="text-stone-700 text-sm font-semibold mb-3">📸 Observações recentes no iNaturalist</p>
-      <div className="grid grid-cols-3 gap-2">
-        {photos.map((url, i) => (
-          <img key={i} src={url} alt={taxon} className="w-full aspect-square object-cover rounded-xl" />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-  if (photos.length === 0) return null;
+if (photos.length === 0) return null;
 
   return (
     <div className="rounded-2xl p-4 border-2" style={{ backgroundColor: "#fffdf6", borderColor: "#bda878" }}>
