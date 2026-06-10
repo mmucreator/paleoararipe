@@ -145,7 +145,7 @@ export const FOSSILS: Record<FossilId, Fossil> = {
     habitat: "Aquático e terrestre (vegetação)",
     period: "Cretáceo Inferior (~110 Ma)",
     group: "Insecta › Neoptera › Paraneoptera",
-    taxon: "Hemiptera",
+    taxon: "Belostomatidae",
     acceptedIds: ["hemiptera", "hemiptera_vivente"],
   },
   odonata_vivente: {
