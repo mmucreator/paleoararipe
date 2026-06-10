@@ -342,7 +342,7 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
       "Uma planície costeira do Nordeste",
     ],
     answer: "Um planalto sedimentar que preserva os estratos fossilíferos",
-    explanation: "A Chapada do Araripe é um planalto sedimentar com até 900m de altitude que expõe os fósseis para a erosãoo.",
+    explanation: "A Chapada do Araripe é um planalto sedimentar com até 900m de altitude que expõe os fósseis para a erosão.",
     difficulty: "easy",
   },
   {
